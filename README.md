@@ -10,7 +10,7 @@ A real-time, obstacle-aware Smart Railway Gate System powered by an **ESP32**, w
 
 _Add your GIF here in `images/lv_0_20250617213336.gif`_  
 Example:  
-![demo](images/demo.gif)
+![demo](images/lv_0_20250617213336.gif)
 
 ---
 
