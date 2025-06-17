@@ -15,8 +15,8 @@ This project is a smart IoT-based railway crossing system that allows gate contr
 | Component            | Quantity |
 |----------------------|----------|
 | ESP32                | 1        |
-| Servo Motor (SG90/MG995) | 1        |
-| Ultrasonic Sensor (HC-SR04) | 1        |
+| Servo Motor (SG90/MG995) | 2        |
+| Ultrasonic Sensor (HC-SR04) | 2        |
 | Buzzer               | 1        |
 | I2C LCD (16x2)       | 1        |
 | Power Supply         | 1        |
