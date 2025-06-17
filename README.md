@@ -105,7 +105,7 @@ GIF here in `images/lv_0_20250617213336.gif`_
 | Ultrasonic 1 ECHO| 33       |
 | Ultrasonic 2 TRIG| 32       |
 | Ultrasonic 2 ECHO| 35       |
-| I2C SDA/SCL      | Default  |
+| I2C SDA/SCL      | 21,22    |
 
 > Note: Use capacitor to prevent servo resets due to voltage drops.
 
