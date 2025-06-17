@@ -79,22 +79,35 @@ Example:
 
 ---
 
-## 🪛 Wiring Overview
+ Component                   | Quantity | Notes                                                      |
+|----------------------------|----------|------------------------------------------------------------|
+| ESP32                      | 1        | WiFi-capable microcontroller                               |
+| Servo Motor (MG90s/SG90)   | 2        | Controls gate movement (GPIO 13 & 14)                      |
+| Ultrasonic Sensor (HC-SR04)| 2        | For obstacle detection (TRIG: GPIO 25/32, ECHO: GPIO 33/35)|
+| Buzzer                     | 1        | Gate movement alert (GPIO 12)                              |
+| LED - Red                  | 1        | Lights when gate is closing/closed (GPIO 26)              |
+| LED - Green                | 1        | Lights when gate is opening/open (GPIO 27)                |
+| 220Ω Resistor              | 2        | For limiting current to LEDs                               |
+| 100μF Capacitor            | 1        | Stabilizes power near servo motors                         |
+| I2C 16x2 LCD (addr: 0x27)  | 1        | Displays gate status with scrolling messages              |
+| Breadboard, wires          | Many     | General purpose wiring                                     |
 
-| ESP32 Pin | Component           | Notes                                      |
-|-----------|---------------------|--------------------------------------------|
-| D2        | Servo 1             | Left gate                                  |
-| D4        | Servo 2             | Right gate                                 |
-| D5        | Buzzer              | PWM or tone output                         |
-| D12       | Red LED             | With 220Ω resistor                         |
-| D13       | Green LED           | With 220Ω resistor                         |
-| D14       | Ultrasonic 1 - TRIG | Front sensor                               |
-| D27       | Ultrasonic 1 - ECHO |                                            |
-| D25       | Ultrasonic 2 - TRIG | Back sensor                                |
-| D26       | Ultrasonic 2 - ECHO |                                            |
-| GND       | All grounds         | Common GND                                  |
-| 3.3V/5V   | Power supply        | Via regulated USB or external source       |
-| 100μF Cap | Servo motor supply  | Connected between Vcc & GND near servos    |
+---
+
+## 🔌 Pin Configuration (ESP32)
+
+| Function         | GPIO Pin |
+|------------------|----------|
+| Servo 1          | 13       |
+| Servo 2          | 14       |
+| Buzzer           | 12       |
+| Red LED          | 26       |
+| Green LED        | 27       |
+| Ultrasonic 1 TRIG| 25       |
+| Ultrasonic 1 ECHO| 33       |
+| Ultrasonic 2 TRIG| 32       |
+| Ultrasonic 2 ECHO| 35       |
+| I2C SDA/SCL      | Default  |
 
 > Note: Use capacitor to prevent servo resets due to voltage drops.
 
