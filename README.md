@@ -1,8 +1,17 @@
 # 🚦 Smart Railway Gate with ESP32 & Telegram Bot
 
-A real-time, obstacle-aware Smart Railway Gate System powered by an **ESP32**, with **dual servos**, **ultrasonic sensors**, **LED indicators**, and a **Telegram bot interface** for remote control and monitoring.
+[![Arduino](https://img.shields.io/badge/Arduino-IDE-blue?logo=arduino&logoColor=white)](https://www.arduino.cc/en/software)
+[![ESP32](https://img.shields.io/badge/ESP32-WiFi-orange?logo=espressif&logoColor=white)](https://www.espressif.com/en/products/socs/esp32)
+[![Platform](https://img.shields.io/badge/Platform-Telegram%20Bot-2CA5E0?logo=telegram&logoColor=white)](https://core.telegram.org/bots)
+[![License: MIT](https://img.shields.io/badge/License-MIT-green.svg)](LICENSE)
+![Stars](https://img.shields.io/github/stars/ikrishanaa/Smart-Railway-Gate-Telegram-ESP32?style=social)
+![Forks](https://img.shields.io/github/forks/ikrishanaa/Smart-Railway-Gate-Telegram-ESP32?style=social)
 
-> Built to reduce human error and increase safety — especially in rural or unmanned railway crossings.
+A **real-time, obstacle-aware Smart Railway Gate System** powered by **ESP32**, featuring **dual servo gates, ultrasonic sensors, buzzer alerts, LEDs**, and a **Telegram bot interface** for remote control & monitoring.  
+
+> ⚡ Designed to reduce human error and enhance safety — especially in rural or unmanned railway crossings.  
+
+
 
 ---
 
